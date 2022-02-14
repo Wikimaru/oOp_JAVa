@@ -1,20 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package week6lab2;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author ASUS
- */
 public class Week6Lab2 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args)
+    {
+        Course course = new Course("Math");
+        course.addStudent("NIceGuy");
+        course.addStudent("NiceTryRocket");
+        course.addStudent("A");
+        course.addStudent("B");
+        for (int i = 0; i < course.getNumberOfStudents(); i++) {
+           System.out.println("Student " + (i + 1) + " is " + course.getStudents().get(i));
+        }
+        course.dropStudent("A");
+        for (int i = 0; i < course.getNumberOfStudents(); i++) {
+           System.out.println("Student " + (i + 1) + " is " + course.getStudents().get(i));
+        }
+        course.clear();
+        for (int i = 0; i < course.getNumberOfStudents(); i++) {
+           System.out.println("Student " + (i + 1) + " is " + course.getStudents().get(i));
+        }
     }
     
 }

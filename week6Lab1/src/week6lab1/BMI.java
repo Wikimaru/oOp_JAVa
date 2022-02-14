@@ -1,11 +1,11 @@
 package week6lab1;
 
 public class BMI {
-    public String name;
-    public int age;
-    public double weight;
-    public double feet;
-    public double inches;
+    protected String name;
+    protected int age;
+    protected double weight;
+    protected double feet;
+    protected double inches;
     
     public BMI(String name, int age, double weight, double feet, double inches) 
     {
