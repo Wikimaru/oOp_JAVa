@@ -1,25 +1,18 @@
 package week5lab2;
 
 public class RegularPolygon {
-        private int n;
-    private double side;
-    private double x;
-    private double y;
-
-    RegularPolygon() 
+    private int n = 3;
+    private double side = 1;
+    private double x = 0;
+    private double y = 0;
+    RegularPolygon()
     {
-        this.n = 3;
-        this.side = 1;
-        this.x = 0;
-        this.y = 0;
+        
     }
-
     RegularPolygon(int n, double side) 
     {
         this.n = n;
         this.side = side;
-        this.x = 0;
-        this.y = 0;
     }
 
     RegularPolygon(int n, double side, double x, double y) 
@@ -30,7 +23,6 @@ public class RegularPolygon {
         this.y = y;
     }
 
-    // Methods
     public int getN() 
     {
         return n;

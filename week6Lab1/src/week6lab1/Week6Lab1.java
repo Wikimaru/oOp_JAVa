@@ -1,9 +1,25 @@
 package week6lab1;
+import java.util.Scanner;
 
 public class Week6Lab1 {
 
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) 
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("enter your name: ");
+        String name = in.nextLine();
+        System.out.print("enter your age: ");
+        int age = in.nextInt();
+        System.out.print("enter your weight(pounds): ");
+        double weight = in.nextDouble();
+        System.out.println("Enter your height(inches)");
+        System.out.print("feet: ");
+        double feet = in.nextDouble();
+        System.out.print("inches: ");
+        double inches = in.nextDouble();
+        BMI bmi = new BMI(name, age, weight, feet, inches);
+        System.out.println("Your BMI is " + bmi.getBMI());
+        System.out.println("Your interpretation is " + bmi.getInterpretation());
     }
     
 }

@@ -1,25 +1,16 @@
 package week5Lab1;
 import java.util.Date;
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author ASUS
- */
 public class Account {
-    private int id;
-    private double balance;
-    private double annualInterestRate;
+    private int id = 0;
+    private double balance = 0 ;
+    private double annualInterestRate = 4.5;
     private Date dateCreated;
 
-    Account(int id,double balance,double annualInterestRate) 
+    Account(int id,double balance) 
     {
         this.id = id;
         this.balance = balance;
-        this.annualInterestRate = annualInterestRate;
         this.dateCreated = new Date();
     }
     public int getId() {
