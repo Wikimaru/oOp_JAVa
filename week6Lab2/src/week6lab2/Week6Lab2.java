@@ -1,6 +1,4 @@
 package week6lab2;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Week6Lab2 {
 

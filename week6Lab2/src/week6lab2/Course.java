@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Course {
     protected String courseName;
-    protected String[] students = new String[100];
     protected List<String> listStudent = new ArrayList<>();
     protected int numberOfStudents;
 
