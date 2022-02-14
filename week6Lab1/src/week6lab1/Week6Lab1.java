@@ -20,6 +20,7 @@ public class Week6Lab1 {
         BMI bmi = new BMI(name, age, weight, feet, inches);
         System.out.println("Your BMI is " + bmi.getBMI());
         System.out.println("Your interpretation is " + bmi.getInterpretation());
+        in.close();
     }
     
 }
