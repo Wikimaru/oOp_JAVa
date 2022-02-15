@@ -36,10 +36,10 @@ public class Queue
     }
 
     public boolean empty() {
-        return (this.size == 0);
+        return (size == 0);
     }
 
     public int getSize() {
-        return this.size;
+        return size;
     }
 }
