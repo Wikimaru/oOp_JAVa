@@ -48,8 +48,8 @@ public class Week6Lab6 {
                     break;
                 case 4:
                     System.out.println("End of Program.");
-                    in.close();
-                    return;
+                    System.out.print("Enter an id: ");
+                    id = in.nextInt();
             }
         }
     }
