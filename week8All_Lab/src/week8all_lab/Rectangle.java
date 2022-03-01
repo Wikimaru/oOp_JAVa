@@ -60,4 +60,9 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle>{
     public String toString(){
         return super.toString() + "\nWidth : " + width + "\nHeight : " + height + "\nArea : " + getArea() + "\nPerimeter : " + getPerimeter();
     }
+    @Override
+    public boolean equals(Object object)
+    {
+        return  this.compareTo((Rectangle)object)==-1;
+    }
 }

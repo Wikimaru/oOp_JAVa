@@ -73,14 +73,14 @@ public class Week8All_Lab {
             System.out.println("Rectangle" + (i+1) + rec[i].toString() + "\n");
         }
 
-        if(rec[0].compareTo(rec[1]) == -1){
+        if(rec[0].equals(rec[1])){
             System.out.println("Rectangle1 is equal to Rectangle2");
         }
         else{
             System.out.println("Rectangle1 is not equal to Rectangle2");
         }
 
-        if(rec[1].compareTo(rec[2]) == -1){
+        if(rec[1].equals(rec[2])){
             System.out.println("Rectangle2 is equal to Rectangle3");
         }
         else{
@@ -93,7 +93,7 @@ public class Week8All_Lab {
         System.out.println("\n" + oct.toString());
 
         Octagon oct2 = (Octagon)oct.clone();
-
+        System.out.println("\n" + oct2.toString());
         if(oct.compareTo(oct2) == -1){
             System.out.println("Octagon(copy) is equal Octagon");
         }
